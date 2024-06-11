@@ -1,16 +1,13 @@
 # DetectPlates.py
-
 import cv2
 import numpy as np
 import math
 import Main
 import random
-
 import Preprocess
 import DetectChars
 import PossiblePlate
 import PossibleChar
-
 # module level variables ##########################################################################
 PLATE_WIDTH_PADDING_FACTOR = 1.3
 PLATE_HEIGHT_PADDING_FACTOR = 1.5
