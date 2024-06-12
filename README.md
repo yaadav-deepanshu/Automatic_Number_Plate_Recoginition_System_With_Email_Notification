@@ -1,6 +1,4 @@
-Your provided code is well-structured for an Automatic Number Plate Recognition (ANPR) system with email notifications. Below is a brief summary and a sample README file for your GitHub repository to give users an overview of the project and instructions on how to use it.
-Automatic Number Plate Recognition System With Email Notification
-Overview
+
 
 The Automatic Number Plate Recognition (ANPR) System with Email Notification is a tool designed to detect and recognize vehicle number plates from images using OpenCV and machine learning techniques. Upon successfully recognizing a number plate, the system sends an email notification with the detected number plate details. This system is useful for various applications such as security monitoring, parking management, and toll collection.
 Features
