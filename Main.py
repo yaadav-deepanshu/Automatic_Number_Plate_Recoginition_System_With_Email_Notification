@@ -117,12 +117,12 @@ def send_email(vehicle_number):
 
     email = EmailMessage()
 
-    email_addr = 'Your_Email@gmail.com'
+    email_addr = 'Your_Email@xyz.com' #Your email from which you want to send the email
     email_passwd = 'Enter_your_gmail_password'
     # refer this video for setup :-------https://www.youtube.com/shorts/5V_FiEHS0c8?app=desktop-----------
 
     email['From'] = email_addr
-    email['To'] = 'yaadav.deepanshu@gmail.com'
+    email['To'] = 'Email@xyz.com' #Receivers email address
     email['Subject'] = "Notification: Vehicle Arrival at Main Gate The vehicle's number is [{}]".format(vehicle_number)
 
     email.set_content(html.substitute({"name": "Your Name", "vehicle_number": vehicle_number}), "html")

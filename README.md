@@ -1,7 +1,5 @@
-
-
 The Automatic Number Plate Recognition (ANPR) System with Email Notification is a tool designed to detect and recognize vehicle number plates from images using OpenCV and machine learning techniques. Upon successfully recognizing a number plate, the system sends an email notification with the detected number plate details. This system is useful for various applications such as security monitoring, parking management, and toll collection.
-Features
+Features :-
 
     Real-time Number Plate Detection: Processes images to detect and recognize vehicle number plates.
     Email Notifications: Sends an email with the vehicle's number plate details upon successful recognition.
@@ -19,9 +17,11 @@ cd ANPR-Email-Notification
 
 Install the Required Dependencies:
 
-bash
-
-    pip install -r requirements.txt
+steps:
+    pip install opencv-python
+    pip install numpy
+    pip install secure-smtplib
+    pip install pathlib
 
     Prepare Email Notification Settings:
         Edit the send_email function in main.py and replace 'Your_Email@gmail.com' and 'Enter_your_gmail_password' with your email credentials.
