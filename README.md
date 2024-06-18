@@ -12,7 +12,7 @@ This project is a License Plate Recognition System that detects and recognizes l
 ## Technology Stack
 
 - **Backend**: Python, Flask, OpenCV
-- **Frontend**: HTML,CSS,JAVASCRIPT
+- **Frontend**: HTML, CSS, JAVASCRIPT
 - **Email Notifications**: SMTP
 
 ## Installation
