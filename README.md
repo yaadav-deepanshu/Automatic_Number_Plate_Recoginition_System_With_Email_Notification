@@ -1,77 +1,102 @@
-The Automatic Number Plate Recognition (ANPR) System with Email Notification is a tool designed to detect and recognize vehicle number plates from images using OpenCV and machine learning techniques. Upon successfully recognizing a number plate, the system sends an email notification with the detected number plate details. This system is useful for various applications such as security monitoring, parking management, and toll collection.
-Features :-
+# License Plate Recognition System
 
-    Real-time Number Plate Detection: Processes images to detect and recognize vehicle number plates.
-    Email Notifications: Sends an email with the vehicle's number plate details upon successful recognition.
-    Advanced Image Processing: Utilizes OpenCV for image processing to enhance recognition accuracy.
-    Machine Learning Integration: Incorporates KNN-based machine learning for character recognition.
+This project is a License Plate Recognition System that detects and recognizes license plates from images. It includes a backend powered by OpenCV and Python for image processing and character recognition, and a frontend built with HTML, CSS, and JavaScript for user interaction.
 
-Installation
+## Features
 
-    Clone the Repository:
+- Detects and recognizes license plates from uploaded images
+- Highlights detected license plates on images
+- Sends email notifications with the detected license plate number
+- Simple and user-friendly web interface
+![alt text](Github.png)
+## Technology Stack
 
-    bash
+- **Backend**: Python, Flask, OpenCV
+- **Frontend**: HTML
+- **Email Notifications**: SMTP
 
-git clone https://github.com/yourusername/ANPR-Email-Notification.git
-cd ANPR-Email-Notification
+## Installation
 
-Install the Required Dependencies:
+### Prerequisites
 
-steps:
-    pip install opencv-python
-    pip install numpy
-    pip install secure-smtplib
-    pip install pathlib
+- Python 3.x
+- pip (Python package installer)
+- OpenCV
+- Flask
 
-    Prepare Email Notification Settings:
-        Edit the send_email function in main.py and replace 'Your_Email@gmail.com' and 'Enter_your_gmail_password' with your email credentials.
+### Setup
 
-    Place the Input Image:
-        Ensure the image you want to process is named 1.png and placed in the root directory of the project.
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/license-plate-recognition.git
+   cd license-plate-recognition
+
+
+Install required Python packages:
+
+bash
+
+pip install -r requirements.txt
+
+Create requirements.txt with the following content:
+
+text
+
+Flask
+opencv-python
+numpy
+
+Download and setup the required files:
+
+    Ensure you have the necessary OpenCV training files (like haarcascade_russian_plate_number.xml).
+    Place your email credentials in the send_email function in app.py.
+
+Run the Flask server:
+
+    python app.py
+
+Open your web browser and go to:
+
+    http://127.0.0.1:5000
 
 Usage
 
-    Run the ANPR System:
+    Upload an image containing a vehicle's license plate.
+    The system will process the image, detect the license plate, and display the result.
+    An email notification will be sent with the detected license plate number.
 
-    bash
+Project Structure
 
-    python main.py
+php
 
-    The system will:
-        Read the image file 1.png.
-        Detect and recognize the number plate.
-        Draw a red rectangle around the detected plate.
-        Display the processed image with the detected number plate.
-        Send an email notification with the recognized number plate details.
-
-Configuration
-
-    Email Template: The email template is read from an index.html file. Ensure this file exists in the root directory.
-    SMTP Settings: The email notification uses Gmail's SMTP server. Ensure you have allowed less secure apps or set up an app password if using 2FA on your Gmail account.
+.
+├── app.py                     # Main backend file with Flask server
+├── DetectChars.py             # Character detection module
+├── DetectPlates.py            # Plate detection module
+├── PossiblePlate.py           # Possible plate module
+├── templates/
+│   └── index.html             # Frontend HTML file
+├── static/
+│   └── imgOriginalScene.png   # Output image after processing
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project documentation
 
 Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+Contributions are welcome! Please feel free to submit a Pull Request.
 License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
-Additional Files
-requirements.txt
+This project is licensed under the MIT License.
+Acknowledgements
 
-txt
+    Thanks to the OpenCV community for providing extensive documentation and tutorials.
+    Special thanks to contributors of the original modules used in this project.
 
-numpy
-opencv-python
+Contact
+
+For any inquiries or issues, please open an issue on this repository or contact me at "deeepanshu3107@gmail.com".
 
 
-html :-
-index.html
+This `README.md` provides a comprehensive overview of your project, including installation instructions, usage, and the project structure. Make sure to update the placeholders like `Yaadav-deepanshu` and `deeepanshu3107@gmail.com` with your actual GitHub username and contact email.
 
-<!DOCTYPE html>
-<html>
-<body>
-    <h2>Vehicle Arrival Notification</h2>
-    <p>Dear ${name},</p>
-    <p>The vehicle with number plate <strong>${vehicle_number}</strong> has arrived at the main gate.</p>
-</body>
-</html>
