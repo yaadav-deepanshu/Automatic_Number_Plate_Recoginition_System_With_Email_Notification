@@ -1,6 +1,7 @@
 # License Plate Recognition System
 
-This project is a License Plate Recognition System that detects and recognizes license plates from images. It includes a backend powered by OpenCV and Python for image processing and character recognition, and a frontend built with HTML, CSS, and JavaScript for user interaction.
+This project is a Automatic License Plate Recognition System that detects and recognizes license plates from images. It includes a backend powered by OpenCV and Python for image processing and character recognition, and a frontend built with HTML, CSS, and JavaScript for user interaction.
+
 
 ## Features
 
@@ -43,9 +44,9 @@ Create requirements.txt with the following content:
 
 text
 
-Flask
-opencv-python
-numpy
+Flask :- pip install Flask
+opencv-python :- pip install opencv-python
+numpy :- pip install numpy
 
 Download and setup the required files:
 
