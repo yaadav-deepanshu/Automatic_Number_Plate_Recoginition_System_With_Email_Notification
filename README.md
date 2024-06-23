@@ -10,6 +10,7 @@ This project is a Automatic License Plate Recognition System that detects and re
 - Sends email notifications with the detected license plate number
 - Simple and user-friendly web interface
 ![alt text](Github.png)
+
 ## Technology Stack
 
 - **Backend**: Python, Flask, OpenCV
@@ -24,11 +25,11 @@ To run this project, you need to update the email addresses and passwords in the
     Main.py
 
 The project will not function correctly without these changes.
+
 Important Links
 
     Setup Video: This video provides a step-by-step guide to set up the project.
     Gmail Password Setup: This video helps you set up the Gmail password required for the project.
-
 
 ### Prerequisites
 
