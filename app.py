@@ -95,10 +95,10 @@ def writeLicensePlateCharsOnImage(imgOriginalScene, licPlate):
 def send_email(vehicle_number):
     html = Template(Path("index.html").read_text())
     email = EmailMessage()
-    email_addr = 'yaadav.practice@gmail.com'
-    email_passwd = 'fkus bmnu zpla nnir'
+    email_addr = 'Sender's email address '
+    email_passwd = 'Enter your gmail password here ' # for more info go to the Readme.md file
     email['From'] = email_addr
-    email['To'] = 'yaadav.deepanshu@gmail.com'
+    email['To'] = 'Receiver's email address '
     email['Subject'] = "Notification: Vehicle Arrival at Main Gate The vehicle's number is [{}]".format(vehicle_number)
     email.set_content(html.substitute({"name": "Your Name", "vehicle_number": vehicle_number}), "html")
     connection = smtp.SMTP_SSL('smtp.gmail.com', 465)
