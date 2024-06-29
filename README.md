@@ -112,5 +112,3 @@ Contact
 For any inquiries or issues, please open an issue on this repository or contact me at "deeepanshu3107@gmail.com".
 
 
-This `README.md` provides a comprehensive overview of your project, including installation instructions, usage, and the project structure. Make sure to update the placeholders like `Yaadav-deepanshu` and `deeepanshu3107@gmail.com` with your actual GitHub username and contact email.
-
