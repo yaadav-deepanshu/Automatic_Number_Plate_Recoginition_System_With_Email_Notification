@@ -98,8 +98,8 @@ def send_email(vehicle_number):
     email_addr = 'Sender's email address '
     email_passwd = 'Enter your gmail password here ' # for more info go to the Readme.md file
     email['From'] = email_addr
-    email['To'] = 'Receiver's email address '
-    email['Subject'] = "Notification: Vehicle Arrival at Main Gate The vehicle's number is [{}]".format(vehicle_number)
+    email['To'] = #'Receiver's email address '
+    email['Subject'] = #"Notification: Vehicle Arrival at Main Gate The vehicle's number is [{}]".format(vehicle_number)
     email.set_content(html.substitute({"name": "Your Name", "vehicle_number": vehicle_number}), "html")
     connection = smtp.SMTP_SSL('smtp.gmail.com', 465)
     connection.login(email_addr, email_passwd)
