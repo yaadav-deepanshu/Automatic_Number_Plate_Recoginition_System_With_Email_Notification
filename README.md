@@ -27,7 +27,6 @@ To run this project, you need to update the email addresses and passwords in the
 The project will not function correctly without these changes.
 
 Important Links
-
     Setup Video: This video provides a step-by-step guide to set up the project.
     Gmail Password Setup: This video helps you set up the Gmail password required for the project.
 
