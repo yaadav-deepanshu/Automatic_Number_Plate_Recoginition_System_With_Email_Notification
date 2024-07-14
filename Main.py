@@ -122,7 +122,7 @@ def send_email(vehicle_number):
     # refer this video for setup :-------https://www.youtube.com/shorts/5V_FiEHS0c8?app=desktop-----------
 
     email['From'] = email_addr
-    email['To'] = 'Email@xyz.com' #Receivers email address
+    email['To'] = 'Email@abc.com' #Receivers email address
     email['Subject'] = "Notification: Vehicle Arrival at Main Gate The vehicle's number is [{}]".format(vehicle_number)
 
     email.set_content(html.substitute({"name": "Your Name", "vehicle_number": vehicle_number}), "html")
