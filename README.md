@@ -1,4 +1,4 @@
-# License Plate Recognition System
+# Automatic License Plate Recognition System With Email Notification 
 
 This project is a Automatic License Plate Recognition System that detects and recognizes license plates from images. It includes a backend powered by OpenCV and Python for image processing and character recognition, and a frontend built with HTML, CSS, and JavaScript for user interaction.
 
