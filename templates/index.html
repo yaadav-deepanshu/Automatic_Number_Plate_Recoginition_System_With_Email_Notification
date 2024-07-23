@@ -37,7 +37,6 @@
             <img id="detectedPlate" src="" alt="Detected Plate Image" style="display: none; max-width: 100%;">
         </div>
     </div>
-
     <script>
         document.getElementById('uploadForm').onsubmit = async function(e) {
             e.preventDefault();
@@ -49,7 +48,6 @@
                 method: 'POST',
                 body: formData
             });
-            
             const result = await response.json();
             document.getElementById('result').innerText = `Detected Plate Number: ${result.plate_number}`;
             document.getElementById('detectedPlate').src = 'static/imgOriginalScene.png';
