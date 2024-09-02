@@ -32,7 +32,7 @@ Important Links
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.10 or above
 - pip (Python package installer)
 - OpenCV
 - Flask
